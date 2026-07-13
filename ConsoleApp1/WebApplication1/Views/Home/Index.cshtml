@@ -1,8 +1,172 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "My Portfolio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section id="home" class="py-5 my-4 border-bottom">
+    <div class="row align-items-center">
+        <div class="col-md-8">
+            <h1 class="display-4 fw-bold">Justin Manzano</h1>
+            <p class="lead text-muted">Aspiring professional software developer</p>
+            <p class="fs-5">Welcome to my portfolio! I am an Information Technology student passionate about developing software solutions and building responsive web applications.</p>
+            <div class="mt-4">
+                <a href="#projects" class="btn btn-primary btn-lg me-2">View Projects</a>
+                <a href="#contact" class="btn btn-outline-secondary btn-lg">Contact Me</a>
+            </div>
+        </div>
+        <div class="col-md-4 text-center mt-4 mt-md-0">
+            <img src="~/images/649274035_122112053451226464_727431776533189181_n.jpg" class="img-fluid rounded-circle shadow" alt="Profile Photo">
+
+            
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-5 my-4 border-bottom">
+    <h2 class="mb-4 fw-bold">About Me</h2>
+    <div class="row">
+        <div class="col-12">
+            <p class="fs-6 lh-lg">
+                I am a forward-thinking student and developer based in Muntinlupa, currently pursuing a Bachelor of Science in Information Technology at Lyceum of alabang. My technical milestones include building full-stack web applications and deploying scalable APIs.
+            </p>
+            <p class="fs-6 lh-lg">
+                I aim to become a Lead Software Engineer, specializing in full-stack cloud development and machine learning integration. Outside of coding, I am an avid trail runner and amateur landscape photographer. These creative, active hobbies keep me grounded and energized, preventing burnout and fueling my problem-solving skills when tackling complex software architecture.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="py-5 my-4 border-bottom">
+    <h2 class="mb-4 fw-bold">Skills</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-primary">Languages</h5>
+                    <p class="card-text">Java, C++, C#, Python, VBA</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-primary">Web Tech</h5>
+                    <p class="card-text">HTML, CSS, Bootstrap, ASP.NET Core MVC</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-primary">Databases</h5>
+                    <p class="card-text">Microsoft Access</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-primary">Tools</h5>
+                    <p class="card-text">Visual Studio, Git/GitHub, Figma, Cisco Packet Tracer, Adobe Photoshop, Blender</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="py-5 my-4 border-bottom">
+    <h2 class="mb-4 fw-bold">Projects</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/briefing.png" class="flex-shrink-0 me-3" alt="Project Icon" style="width: 25px; height: 25px; object-fit: contain;">
+             
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Student Management System – Procedural Core</h5>
+                    <p class="card-text flex-grow-1">A modular console application implementing procedural programming fundamentals to record student profiles, evaluate course grade averages, and track academic performance metrics.</p>
+                    <div class="mb-3"><span class="badge bg-secondary">C#</span></div>
+                    <a href="https://github.com/justin3435-324234/BSIT31E1_PRELIM_H1_MANZANO_JUSTIN.git" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/briefing.png" class="flex-shrink-0 me-3" alt="Project Icon" style="width: 25px; height: 25px; object-fit: contain;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">File Ingestion Engine</h5>
+                    <p class="card-text flex-grow-1">An extensible backend processing utility implementing the Strategy and Factory Creational design patterns to streamline multi-format file parsing, character stream transformations, and structural schema validation workflows.</p>
+                    <div class="mb-3"><span class="badge bg-secondary">C#</span></div>
+                    <a href="https://github.com/justin3435-324234/BSIT31E1_PRELIM_H2_MANZANO_JUSTIN.git" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/briefing.png" class="flex-shrink-0 me-3" alt="Project Icon" style="width: 25px; height: 25px; object-fit: contain;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">FizzBuzz Logic Evaluation</h5>
+                    <p class="card-text flex-grow-1">An algorithmic console application demonstrating control flow architecture, nested conditional branching, and modulo arithmetic evaluations to track sequential numeric outputs.</p>
+                    <div class="mb-3"><span class="badge bg-secondary">C#</span></div>
+                    <a href="https://github.com/justin3435-324234/BSIT31E1_PRELIM_A1_MANZANO_JUSTIN.git" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">View Details</a>
+                </div>
+            </div>
+        </div>
+           <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="~/images/briefing.png" class="flex-shrink-0 me-3" alt="Project Icon" style="width: 25px; height: 25px; object-fit: contain;">
+                    <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Console Calculator Engine</h5>
+                    <p class="card-text flex-grow-1">An interactive console application demonstrating continuous event-loop processing, type-conversion validation, error handling for mathematical boundary limitations, and conditional arithmetic evaluation logic.</p>
+                        <div class="mb-3"><span class="badge bg-secondary">C#</span></div>
+                    <a href="https://github.com/justin3435-324234/BSIT31E1_PRELIM_A2_MANZANO_JUSTIN.git" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">View Details</a>
+    </div>
+    </div>
+     </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/briefing.png" class="flex-shrink-0 me-3" alt="Project Icon" style="width: 25px; height: 25px; object-fit: contain;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Http client starter</h5>
+                    <p class="card-text flex-grow-1">A minimalist ASP.NET Core Web API initialization script configuring the dependency injection container, foundational service frameworks, middleware HTTP request routing pipelines, and secure controller endpoints.</p>
+                    <div class="mb-3"><span class="badge bg-secondary">C#</span> <span class="badge bg-secondary">json</span></div>
+                    <a href="https://github.com/justin3435-324234/Httpclientstarter-Manzano.git" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">View Details</a>
+    </div>
+    </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/briefing.png" class="flex-shrink-0 me-3" alt="Project Icon" style="width: 25px; height: 25px; object-fit: contain;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Transport Polymorphism Challenge</h5>
+                    <p class="card-text flex-grow-1">An object-oriented test harness verifying class hierarchy inheritance, multiple interface implementation, factory-based abstraction instantiation, and runtime polymorphic method behavior across disparate domain entities.</p>
+                    <div class="mb-3"><span class="badge bg-secondary">C#</span></div>
+                    <a href="https://github.com/justin3435-324234/BSIT_31E1_PRELIM_Q1_Manzano_Justin..git" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">View Details</a>
+    </div>
+            </div>
+                </div>
+                    </div>
+</section>
+
+<section id="contact" class="py-5 my-4">
+    <h2 class="mb-4 fw-bold">Contact Information</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-unstyled fs-5">
+                <li class="mb-2"><strong>Email:</strong>manzanojustin37@gmail.com</li>
+                <li class="mb-2"><strong>Mobile:</strong> +63 969 517 2156</li>
+                <li class="mb-2">
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/justin3435-324234" target="_blank" class="text-decoration-none">github.com/justin3435-324234</a>
+                </li>
+                <li class="mb-2">
+                    <strong>Facebook:</strong>
+                    <a href="https://www.facebook.com/profile.php?id=61586793926338" target="_blank" class="text-decoration-none">facebook.com/profile</a>
+                </li>
+            </ul>
+         <div class="mt-4">
+    <a href="~/resume.pdf" download="Justin_Resume.pdf" class="btn btn-success btn-lg">Download Resume</a>
+
+            </div>
+        </div>
+    </div>
+</section>
