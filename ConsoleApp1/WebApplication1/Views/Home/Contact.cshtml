@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+    var socialLinks = ViewData["SocialLinks"] as Dictionary<string, string>;
+}
+
+<section id="contact" class="py-5 my-4">
+    <h2 class="mb-4 fw-bold">Contact Information</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-unstyled fs-5">
+                <li class="mb-2"><strong>Email:</strong> @ViewData["Email"]</li>
+                <li class="mb-2"><strong>Mobile:</strong> @ViewData["Mobile"]</li>
+
+                @if (socialLinks != null)
+                {
+                    foreach (var link in socialLinks)
+                    {
+                        
+                        var displayUrl = link.Value.Replace("https://", "").Replace("http://", "").Replace("www.", "");
+
+                        
+                        if (link.Key == "Facebook" && displayUrl.Contains("profile.php"))
+                        {
+                            displayUrl = "facebook.com/profile";
+                        }
+
+                        <li class="mb-2">
+                            <strong>@link.Key:</strong>
+                            <a href="@link.Value" target="_blank" class="text-decoration-none">@displayUrl</a>
+                        </li>
+                    }
+                }
+            </ul>
+            <div class="mt-4">
+                <a href="@Url.Content(ViewData["ResumePath"]?.ToString())"
+                   download="@ViewData["ResumeDownloadName"]"
+                   class="btn btn-success btn-lg">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
